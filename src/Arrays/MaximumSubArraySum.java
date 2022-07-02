@@ -3,7 +3,7 @@ package Arrays;
 public class MaximumSubArraySum {
     public static int maxSuArray(int [] arr , int n) {
         int curSum = 0;
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i <n ; i++) {
             curSum += arr[i];
             if (curSum> maxSum) maxSum = curSum;
